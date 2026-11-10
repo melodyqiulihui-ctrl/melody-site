@@ -1,45 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>melody's site</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 48px 24px;
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      font-size: 18px;
-      line-height: 1.5;
-      color: #1a1a1a;
-      background: #ffffff;
-    }
-    main {
-      max-width: 36rem;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 2.25rem;
-      line-height: 1.15;
-      margin: 0 0 16px;
-    }
-    p {
-      margin: 0 0 16px;
-    }
-    a {
-      color: inherit;
-    }
-    .note {
-      color: #666666;
-      font-size: 16px;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>melody's site</h1>
-    <p>One sentence about who you are and what you care about.</p>
-    <p class="note">This page is the start of my site. It will change a lot.</p>
-  </main>
-</body>
-</html>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A personal space for skiing, ice skating and skateboarding. Explore three ways to move and play an arcade winter run."><title>Snow, Ice & Concrete</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="paint.css?v=dark-motion"><body class="hero-visible"><main><section class="hero showcase" aria-label="Melody’s introduction and activities">
+<div class="showcase-progress" role="group" aria-label="Choose a slide">
+<button type="button" data-slide="0" aria-label="Introduction" aria-pressed="true"><span>01</span></button>
+<button type="button" data-slide="1" aria-label="Skiing" aria-pressed="false"><span>02</span></button>
+<button type="button" data-slide="2" aria-label="Ice skating" aria-pressed="false"><span>03</span></button>
+<button type="button" data-slide="3" aria-label="Skateboarding" aria-pressed="false"><span>04</span></button></div>
+<div class="showcase-slides">
+<div class="showcase-slide is-active" data-panel="0" aria-hidden="false"><h1>Hi, I’m Melody.</h1><p>studying PMUX in Skema and Polimi</p></div>
+<div class="showcase-slide" data-panel="1" aria-hidden="true"><h2>Skiing.</h2><p>Find your line on the snow.</p><a href="#play" data-showcase-mode="snow" tabindex="-1">Explore the slopes ↗</a></div>
+<div class="showcase-slide" data-panel="2" aria-hidden="true"><h2>Ice skating.</h2><p>Make your mark on the ice.</p><a href="#play" data-showcase-mode="ice" tabindex="-1">Glide and sketch ↗</a></div>
+<div class="showcase-slide" data-panel="3" aria-hidden="true"><h2>Skateboarding.</h2><p>Find your own way to roll.</p><a href="#decks" tabindex="-1">Choose your board ↗</a></div></div>
+
+</section><div class="showcase-dock"><a class="showcase-home" href="#">Melody.</a><button type="button" class="showcase-menu-button" aria-expanded="false" aria-controls="showcase-menu">MENU</button><nav id="showcase-menu" class="showcase-menu" aria-label="Explore" hidden><a href="#sports">SPORTS</a><a href="#decks">SKATEBOARDS</a><a href="#stickers">STICKERS</a><a href="#play">PLAY</a><a href="#soundtrack">MUSIC</a></nav></div><section id="sports" class="sports"><div class="section-top"><h2>Choose your surface.</h2><span>THREE WAYS TO MOVE / 01—03</span></div><div class="cards"><article class="snow"><span class="number">01 / SNOW</span><div class="sport-icon">↟</div><h3>Skiing</h3><p>Fresh tracks. Wide horizons. Finding a rhythm, one turn at a time.</p><a href="#play" data-mode-link="snow">Take a winter run ↗</a></article><article class="ice"><span class="number">02 / ICE</span><div class="sport-icon">∿</div><h3>Ice skating</h3><p>A clean edge and an open rink. A little balance goes a long way.</p><a href="#play" data-mode-link="ice">Step onto the ice ↗</a></article><article class="concrete"><span class="number">03 / CONCRETE</span><div class="sport-icon">⌁</div><h3>Skateboarding</h3><p>Everyday streets, new possibilities. Keep rolling. Keep trying.</p><a href="#play" data-mode-link="street">Roll into the arcade ↗</a></article></div></section><section class="deck-edit" id="decks" aria-labelledby="deck-heading"><div class="deck-heading"><div><h2 id="deck-heading">Different boards.<br><em>Endless possibilities.</em></h2></div></div><div class="deck-carousel" tabindex="0" role="region" aria-label="Skateboard carousel. Boards slide automatically. Click a board to select it."><div class="deck-orbit"></div><div class="deck-caption"><span id="deck-count">01 / 07</span><h3 id="deck-name">Penny board</h3></div></div><div class="deck-selection sr-only" id="deck-selection" role="status"></div><div class="deck-controls"><a class="choose-stickers" href="#stickers">Choose stickers ↗</a></div><p class="deck-credit">Board imagery inspired by your reference images. Motion inspired by <a href="https://60fps.design/motion/cash-app">Cash App on 60fps</a>.</p></section><section class="sticker-studio" id="stickers" aria-labelledby="sticker-title"><div class="sticker-intro"><p class="eyebrow">MAKE IT YOURS</p><h2 id="sticker-title">Your board.<br>Your sticker story.</h2><p>Pick a sticker, then tap the deck to paste it. Drag to move, resize, and rotate. Your design appears in the Street game.</p><a href="#decks">Choose a different board ↗</a></div><div class="sticker-workspace"><canvas id="sticker-board" width="360" height="460" aria-label="Skateboard sticker editor. Choose a sticker then tap the board to place it. Drag stickers to move them."></canvas><div class="sticker-tools"><div id="sticker-palette" role="group" aria-label="Choose a sticker"></div><label for="sticker-size">Sticker size</label><input id="sticker-size" type="range" min="8" max="24" value="14"><label for="sticker-angle">Rotation</label><input id="sticker-angle" type="range" min="-180" max="180" value="-12"><div class="sticker-edit-actions"><button id="sticker-delete" disabled>Remove selected</button><button id="sticker-undo">Remove last</button></div><p id="sticker-status" role="status">Pick a sticker, then tap the board.</p><p class="sticker-saved">Saved automatically on this browser, separately for each board.</p><a class="button" href="#play">Ride your design ↗</a></div></div></section><section id="play" class="arcade"><div class="arcade-copy"><p class="eyebrow">A LITTLE LESS SCROLL. A LITTLE MORE PLAY.</p><h2>Your next run<br>starts <em>here.</em></h2><p>A browser adaptation of Prince’s Ice Skating Game. Collect flags, dodge obstacles, and find your line with Electric Hide-and-Seek as your soundtrack.</p><div class="modes" role="group" aria-label="Choose game surface"><button data-mode="snow" aria-pressed="true">Snow</button><button data-mode="ice" aria-pressed="false">Ice</button><button data-mode="street" aria-pressed="false">Street</button></div><ul><li id="control-hint">← → or A / D to steer</li><li id="score-rules">Flags +10 · Trees −5 · Rocks −10</li><li id="end-rule">A negative score ends the run.</li><li id="speed-rule">Collect 10 flags to pick up speed.</li></ul><p class="fine">Touch screen? Drag across the game to steer.<br>Street mode features rails, ledges, ramps, and stairs. Press Enter to jump.</p></div><div class="game-shell"><div class="game-bar"><span>THE FLOW ARCADE</span><span>SCORE <b id="score">0</b></span></div><div class="stage"><canvas id="game" width="640" height="520" tabindex="0" aria-label="Winter arcade game. Use left and right arrows to steer. Collect flags and avoid obstacles."></canvas><div id="trick-animation" class="trick-animation" hidden></div><div id="overlay"><span id="state-label">READY WHEN YOU ARE</span><h3 id="state-title">Find your line.</h3><p id="state-text">Collect the flags. Leave the obstacles behind.</p><button class="button" id="start">Start a run ↗</button></div></div><div id="ice-controls" class="ice-controls" hidden><p><strong>Sketches on Ice</strong> · Free skate & sketch</p><p>Sweep your mouse to glide and draw on the ice. Click the character to spin. Press Enter to jump.</p><div class="ice-actions"><label for="ice-color">Trail color</label><select id="ice-color"><option value="ice">Chalk white</option><option value="silver">Soft silver</option><option value="rose">Rose</option><option value="blue">Frost blue</option></select><button id="ice-spin">Spin</button><button id="ice-jump">Jump · Enter</button><button id="ice-clear">Clear ice</button></div><p id="ice-action-status" role="status">Glide to sketch. Snowflakes +5 · Spin +10 · Jump +15</p></div><div id="street-tricks" class="street-tricks" hidden><p class="game-board-label">Your board: <strong id="game-board-name">Streetboard</strong> · <a href="#decks">Change board</a> · <a href="#stickers">Add stickers</a></p><div class="trick-actions"><label for="trick-type">Street trick</label><select id="trick-type"><option>Ollie</option><option>Kickflip</option><option>Treflip</option></select><button id="do-trick">Trick · Enter ↗</button></div><p id="trick-status" role="status">Enter or tap Trick to jump over obstacles</p><small>Animations: <a href="https://github.com/Shellywell123/SKanimATE">SKanimATE by Shellywell123</a> · <a href="skanimate/LICENSE">GPL-3.0</a> · <a href="skanimate-source.zip">Animation source</a></small></div><div class="game-bottom"><span id="status" aria-live="polite">Ready to ride</span><button id="game-music" aria-pressed="false">♫ Music off</button><button id="pause">Pause</button><button id="restart">Restart ↻</button></div></div></section><section class="soundtrack" id="soundtrack" aria-labelledby="soundtrack-title"><div class="soundtrack-heading"><p class="eyebrow">OFF THE BOARD / ON THE BEAT</p><h2 id="soundtrack-title">Every ride needs<br>a little rhythm.</h2><p>Electric Hide-and-Seek. A painted guitar, a looping groove, and a moment to get lost in the music.</p></div><iframe id="music-frame" src="music/index.html?v=paint" title="Electric Hide-and-Seek, synchronized guitar animation and music player" loading="eager" allow="autoplay"></iframe><p class="soundtrack-note">Music starts automatically when your browser allows it, or after your first click or tap. Use the music control to mute.</p></section><section class="outro"><span>KEEP YOUR BALANCE.</span><h2>See you out there.</h2><a href="#">Back to the top ↑</a></section></main><footer><a class="brand" href="#">S / I / C</a><p>Snow, Ice & Concrete · A personal playground.</p><p>Homepage artwork by <a href="https://www.behance.net/gallery/103669967/Multicolored-skateboards/modules/596018533">Марина Бич</a> · Game adapted from <a href="https://github.com/pkprajapati7402/Ice-Skating-Game">Prince’s open-source game</a> · <a href="LICENSE.txt">MIT license</a></p></footer><script src="stickers.js?v=paint"></script><script src="board-shapes.js?v=stickers"></script><script src="street-park.js?v=paint"></script><script src="ice-rink.js?v=paint"></script><script src="game.js?v=paint"></script><script src="decks.js?v=stickers-link"></script><button id="music-toggle" class="music-toggle" aria-pressed="false">♫ Enable music</button><script src="soundtrack.js?v=music-run"></script><script>const heroSection=document.querySelector('.hero');new IntersectionObserver(entries=>document.body.classList.toggle('hero-visible',entries[0].isIntersecting),{threshold:0.35}).observe(heroSection);</script><script src="showcase.js?v=dark-motion"></script><script src="site-motion.js"></script></body></html>
