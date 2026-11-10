@@ -1,4 +1,4 @@
-Course tools: registered as Melody, https://melody-site.melodyqiulihui.workers.dev. On Tuesday, pass this name (the one I like to be called) to the PMUX course tools.
+Course tools: registered as Melody, https://snow-ice-concrete-melody.saltyaloha.chatgpt.site. On Tuesday, pass this name (the one I like to be called) to the PMUX course tools.
 
 # My site's agent
 
